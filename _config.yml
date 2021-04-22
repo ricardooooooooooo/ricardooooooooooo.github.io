@@ -1,0 +1,31 @@
+# Site settings
+title: Ricxpl's Blog | My personal blog
+description: "My personal blog about things that I like to write when I'm bored"
+url: "https://ricxpl.github.io"
+author:
+  name: "Ricardo Costa"
+  email: "hudson0xf@gmail.com"
+  url: "https://ricxpl.github.io"
+
+# Build settings
+baseurl: /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
